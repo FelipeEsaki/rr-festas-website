@@ -40,7 +40,7 @@ carousel.addEventListener("touchend", (e) => {
 function startSlideInterval() {
     slideInterval = setInterval(() => {
         nextSlide();
-    }, 4000); // 4 segundos
+    }, 8000); // 4 segundos
 }
 
 function stopSlideInterval() {

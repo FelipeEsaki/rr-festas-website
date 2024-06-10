@@ -5,6 +5,37 @@
 main {
     max-width: 100vw;
 
+    #wpp-btn {
+        margin: 20px;
+        z-index: 999;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        animation: wpp-btn 1s ease-in-out infinite;
+
+        &:hover {
+            animation: none;
+        }
+    }
+
+    #wpp-btn-mobile {
+        display: none;
+    }
+
+    @keyframes wpp-btn {
+        0% {
+            bottom: 0;
+        }
+
+        50% {
+            bottom: 30px;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
+
     .carousel-container {
         width: 100%;
         overflow: hidden;
@@ -306,6 +337,28 @@ main {
 
     main {
         max-width: 100vw;
+
+        #wpp-btn {
+            display: none;
+
+            &:hover {
+                animation: none;
+            }
+        }
+
+        #wpp-btn-mobile {
+            display: flex;
+            margin: 20px;
+            z-index: 999;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            animation: wpp-btn 1s ease-in-out infinite;
+
+            &:hover {
+                animation: none;
+            }
+        }
 
         .carousel-container {
             width: 100%;
